@@ -1,0 +1,9 @@
+
+query DemoQuery($datasource: String!, $contextItem: String!, $language: String!) {
+  # Datasource query
+  # $datasource should be set to the ID of the rendering's datasource item
+  datasource: item(path: $datasource, language: $language) {
+    id
+    name
+    }
+}

@@ -1,0 +1,47 @@
+.aucardnavmobile {
+    border: none;
+}
+
+.leftContainermobile{
+    background-color: #f0ece1;
+    display: flex;
+}
+
+.leftnavlinksmobile {
+    width:90px;
+}
+
+.leftnavlinksmobile :global(.active) {
+    color: #fff !important;
+    background-color: #2a2a2a !important;
+}
+
+.leftnavlinksmobile :global(.nav-link) {
+  text-align: start;
+  width:90px;
+}
+.accordionbody {
+    background-color: #F5F5F5;
+  }
+
+  .accordionbody :global(.headerlist) {
+    background-color: #F5F5F5;
+  }
+
+.aunavlinkmobile {
+    color:#2a2a2a;
+    padding: 0.5rem 0.5rem;
+    height: 70px;
+}
+
+.auheadermobileaccordionbutton {
+    background-color: #F5F5F5 !important;
+    font-size: 0.75rem;
+}
+
+.autabcontent {
+    font-size: 0.75rem;
+    background-color: #F5F5F5;
+}
+
+

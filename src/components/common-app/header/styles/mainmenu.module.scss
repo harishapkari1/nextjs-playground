@@ -1,0 +1,85 @@
+.aumainmenu {
+    
+    .headerdetailscontainer {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+}
+
+.leftcontainer{
+    width:50%;
+    background-color: #f0ece1;
+    display: flex;
+    justify-content: end;
+}
+
+.leftlinks {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    a {
+        margin: 0.5rem 0rem; 
+    }
+
+    .btnprimary {
+        border-color: #fc5400;
+        background-color: #fc5400;
+    }
+
+    .btnoutlineprimary {
+        border-color: #fc5400;
+        color: #fc5400;
+    }
+}
+
+.leftnavlinks {
+    width:150px;
+}
+
+
+.aunavlink :global(.nav-link)  {
+    color: #2a2a2a !important;
+    text-align: center;
+    width: 150px;
+}
+
+.aunavlink :global(.active)  {
+        color: #fff !important;
+        background-color: #2a2a2a !important;
+}
+
+.aumenulist {
+    padding-right: 10%;
+
+
+}
+
+.aumenulist :global(.list-group-item)  {
+    border-width: 0 0 0px;
+    padding: 0.5rem 0rem 0rem 0.5rem;
+
+    a {
+        text-decoration: none;
+        background-color: transparent;
+        color: #2a2a2a;
+    }
+
+    a:hover {
+        color: #fc5400;
+    }
+
+    @media (max-width: 992px) {
+        background-color: #F5F5F5;
+      }
+}
+
+.aumenulist :global(.listheading)  {
+    list-style: none;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.autabcontent :global(.active)  {
+    display: flex;
+}

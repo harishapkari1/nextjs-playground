@@ -1,0 +1,96 @@
+query NavigationGraphqlQuery($datasource: String!, $language: String!) {
+  datasource: item(path: $datasource, language: $language) {
+    name
+    children {
+      results {
+        ... on TopMenu {
+          desktopLogo {
+            jsonValue
+          }
+          mobileLogo {
+            jsonValue
+          }
+
+          children {
+            results {
+              ... on TopMenuItem {
+                id
+                mainLinkText {
+                  value
+                }
+                mainLinkUrl {
+                  value
+                }
+                showArrow {
+                  value
+                }
+                children {
+                  results {
+                    ... on MenuItem {
+                      id
+                      linkText {
+                        value
+                      }
+                      linkUrl {
+                        value
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ... on MainMenu {
+          children {
+            results {
+              ... on MainMenuItem {
+                id
+                mainLinkText {
+                  value
+                }
+                mainLinkUrl {
+                  value
+                }
+                children {
+                  results {
+                    ... on SubMenuItem {
+                      id
+                      menuText {
+                        value
+                      }
+                      children {
+                        results {
+                          ... on SubMenuGroup {
+                            id
+                            children {
+                              results {
+                          ...on SubMenuHeadingOrSpace {
+                                id
+                      					heading {
+                        					value
+                      				}
+                   				 }
+                                ... on MenuItem {
+                                  id
+                                  linkText {
+                                    value
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

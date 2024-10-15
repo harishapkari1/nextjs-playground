@@ -1,0 +1,17 @@
+@use "../../../Styles/colors" as c;
+.aucard{
+    width: 18rem;
+  
+}
+.aucardbody{
+    a {
+        color: c.$aulinkcolor;
+        text-decoration: none;
+        padding: 0px;
+        margin-top: 15px;
+        &:after {
+            content:"\203A"; 
+            padding-left: 5px;
+        }
+    }
+}
